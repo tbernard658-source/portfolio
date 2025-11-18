@@ -6,7 +6,7 @@
   --line:#e0e0e0;
   --accent:#222;
   --container:1100px;
-  --panel-w:420px;
+  --panel-w:600px;
   font-family: 'karrik', 'karrik', serif;
   font-size:16px;
 }
@@ -82,7 +82,7 @@ body{margin:0;background:var(--paper);color:var(--text);-webkit-font-smoothing:a
 /* Le SVG ou l'image du logo */
 .logo img,
 .logo svg {
-  width: 25px;
+  width: 40px;
   height: auto;
   display: block;
   transition: transform 0.25s ease;
