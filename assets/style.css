@@ -142,18 +142,18 @@ body{margin:0;background:var(--paper);color:var(--text);-webkit-font-smoothing:a
 .panel.left{border-left:none;border-right:1px solid #eee;box-shadow:8px 18px 60px rgba(0,0,0,0.06)}
 .close{position:absolute;right:18px;top:14px;border:0;background:transparent;font-size:15px;cursor:pointer}
 
-/* Position par défaut (panel à droite) */
 .close {
   position: absolute;
-  right: 450px;
   top: 14px;
+  right: 18px;       /* CROIX bien collée dans le coin du panel */
   border: 0;
   background: transparent;
   font-size: 15px;
   cursor: pointer;
 }
 
-/* Position spécifique si panel est à gauche */
+/* Panel placé à gauche → croix dans son coin haut gauche */
+.panel.left ~ .close,
 .close.left {
   left: 18px;
   right: auto;
