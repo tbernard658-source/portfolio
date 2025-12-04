@@ -30,16 +30,24 @@ body{margin:0;background:var(--paper);color:var(--text);-webkit-font-smoothing:a
 
 /* links/cards layout similar to PDF: narrow cards stacked */
 .links{margin-top:12px;display:flex;flex-direction:column;gap:10px}
-.card{
+.card {
   display:flex;
   gap:12px;
-  align-items:flex-start; /* texte en haut de l'image */
+  align-items:flex-start;
   padding:10px;
   border-radius:6px;
   background:#fff;
   border:1px solid #eee;
   text-decoration:none;
   color:inherit;
+
+  /* AJOUT POUR L’ANIMATION */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);               /* léger zoom */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06); /* effet un peu plus "carte surélevée" */
 }
 .thumb{
   width:120px;
